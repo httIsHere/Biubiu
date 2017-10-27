@@ -1,0 +1,89 @@
+/* ----------app-------- */
+*{
+    margin: 0;
+    padding: 0;
+}
+#app{
+    font-family: 'Avenir', Helvetica, Arial, sans-serif; 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.mainView{
+    margin-top: 4rem;
+    z-index: 16;
+}
+/* -------------header bar---------- */
+.headerBar{
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: cadetblue;
+    color: #ffffff;
+    padding: 0 .8rem;
+    font-size: 1.3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.headerLeft{
+    display: flex;
+    align-items: center;
+}
+.headerLeft .userHead{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 1.25rem;
+    margin-left: 1rem;
+}
+.headerRight i{
+    margin-left: 1rem;
+}
+/* -----------first page---------- */
+
+/* -----------banner view--------- */
+.bannerView{
+    z-index: 0;
+}
+.bannerView .swiper-slide{
+    height: 10rem;
+    background: #f3f3f3;
+}
+/* -----------left bar------------ */
+.leftBar{
+    z-index: 20;
+}
+.alertBk{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5)
+}
+.menuContent{
+    width: 18rem;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+.menuTop{
+    height: 8rem;
+    background: cadetblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 .8rem;
+    color: #ffffff;
+    font-size: 1.3rem;
+}
+.menuTop .userInfo, .menuTop .extraInfo{
+    margin-top: .8rem;
+}
+.menuTop .userInfo img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+}
