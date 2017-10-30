@@ -15,10 +15,10 @@ const leftBar = {
     }, 
     actions: {
         ShowLeftBar: ({commit}) => {
-            commit('setShowLeftBar')
+            commit('showLeftBar')
         },
         HideLeftBar: ({commit}) => {
-            commit('setShowLeftBar')
+            commit('hideLeftBar')
         }
     }
 }

@@ -9,12 +9,16 @@ const store = new Vuex.Store({
     state: {
         allInfo: [],
         user: {},
-        currentView: 0
+        currentView: 0,
+        requesting: false,
+        error: {}
     },
     getters: {
         getAllInfo: state => state.allInfo,
         getUserInfo: state => state.user,
-        getCurrentView: state => state.currentView
+        getCurrentView: state => state.currentView,
+        requesting: state => state.requesting,
+        error: state => state.error
     },
     mutations: {
         setAllInfo: (state, obj) => {
